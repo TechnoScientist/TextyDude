@@ -5,8 +5,33 @@
 	</head>
 	
 	<body>
+		<p id ='hi'> ?<p>
+		<form>
 		
+			<input id="console" type="text" size=100; maxlength=200; autofocus>
+		</form>
 	</body>
+	
+	
+	<style>
+		body 
+		{
+			background-color: #000000; 
+			color: white;
+			font-size: 25px;
+			font-family: "Lucida Console", Monospace;
+		}
+		#console
+		{
+			position: static;
+			margin-top: 850px;
+			color: white;
+			background-color: black;
+		}
+		
+	</style>
+	
+	
 	
 	<script>
 	     //Map creation 10 across 20 down
@@ -22,6 +47,9 @@
 		//create player
 		var plocation = 1;
 		map[0][0] = plocation;
+		
+		
+		document.getElementById("hi").innerHTML = "Hello?";
 			
 	</script>
 </html>
