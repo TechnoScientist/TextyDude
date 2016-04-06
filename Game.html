@@ -5,36 +5,19 @@
 	</head>
 	
 	<body>
-		<p id ='hi'> ?<p>
-		<form>
-		
-			<input id="console" type="text" size=100; maxlength=200; autofocus>
-		</form>
+		<canvas id="myCanvas" width="400" height="800" style="border:1px solid #000000;"></canvas> 
 	</body>
 	
 	
 	<style>
-		body 
-		{
-			background-color: #000000; 
-			color: white;
-			font-size: 25px;
-			font-family: "Lucida Console", Monospace;
-		}
-		#console
-		{
-			position: static;
-			margin-top: 850px;
-			color: white;
-			background-color: black;
-		}
+		
 		
 	</style>
 	
 	
 	
 	<script>
-	     //Map creation 10 across 20 down
+	     /*//Map creation 10 across 20 down
 		var xsize = 9;
 		var ysize = 19;
 		var map = new Array(xsize);
@@ -46,10 +29,15 @@
 		console.log(map[5][12]);
 		//create player
 		var plocation = 1;
-		map[0][0] = plocation;
+		map[0][0] = plocation; */
+					
+
+	     // Drawing Graphics (canvas)
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
 		
 		
-		document.getElementById("hi").innerHTML = "Hello?";
+		
 			
 	</script>
 </html>
