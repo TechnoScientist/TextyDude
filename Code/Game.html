@@ -1,53 +1,46 @@
-<!Doctype html>
+<!doctype html>
 <html>
 	<head>
-		<title>Text-Based Game</title>
+		<title>Climber</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 	</head>
 	
 	<body>
-		<canvas id="myCanvas" width="400" height="800" style="border:1px solid #000000;"></canvas> 
-	</body>
+		<canvas id="myCanvas" width="400" height="800" style="border:1px solid #000000;"></canvas>
 	
-	
-	<style>
-		
-		
-	</style>
-	
-	
-	
-	<script>
-	     /*//Map creation 10 across 20 down
-		var xsize = 9;
-		var ysize = 19;
-		var map = new Array(xsize);
-		for (var i = 0; i < xsize; i++) {
- 			 map[i] = new Array(ysize);
-		}
-		map[5][12] = 3.0;
-	
-		console.log(map[5][12]);
-		//create player
-		var plocation = 1;
-		map[0][0] = plocation; */
-					
 
-	     // Drawing Graphics (canvas)
+	</body>
+
+	<style>
+	</style>
+
+	<script>
+		// Drawing Graphics (canvas)
 		var c = document.getElementById("myCanvas");
 		var ctx = c.getContext("2d");
-		//player
 		
-		var imgPL = testPlayer.xcf;
-		ctx.drawImage(imgPL,16,16);
-		imgPL.moveTo(200, 300);
-		$("imgPL").keydown(function(k))
-		{
-			k.37;
-			
-		}
-		}
+		var pos = 0;
+
+		$(document).keydown(function(event){
+			alert(String.fromCharCode(event.which));
+			switch(event)
+				{
+					case "%": 
+						pos -= 1;
+					break;
+					
+					case "'": 
+						pos += 1;
+					break;
+						
+
+				}
+		});
 		
-		
-			
 	</script>
+
+
+
+
 </html>
